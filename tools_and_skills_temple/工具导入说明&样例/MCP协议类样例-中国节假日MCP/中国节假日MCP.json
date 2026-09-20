@@ -1,0 +1,20 @@
+{
+  "name": "中国节假日MCP",
+  "typ": "mcp",
+  "description": "中国节假日MCP服务器\r\n一个基于模型上下文协议（MCP）的中国节假日和农历信息服务器，为AI助手提供准确的法定节假日、调休安排、中国传统节日、农历转换、二十四节气和八字计算功能。西方节日都是固定公历日期，不需要查询工具。\r\n\r\n🌟 功能特性\r\n节假日查询: 查询中国法定节假日、传统节日和调休安排\r\n农历转换: 公历与农历日期相互转换\r\n农历信息: 获取详细的农历日期描述，包括生肖、干支等\r\n二十四节气: 查询二十四节气信息和季节划分\r\n八字计算: 根据出生日期时间计算四柱八字和五行属性\r\nFastMCP架构: 基于官方推荐的FastMCP框架，提供更好的性能和稳定性",
+  "desc": "中国节假日、调休、农历、节气、八字查询服务",
+  "industry": "通用",
+  "config": {
+    "headers": {},
+    "server_url": "https://mcp.api-inference.modelscope.net/e5601c35e0c34c/mcp",
+    "configuration": {
+      "timeout": 30,
+      "sse_read_timeout": 300
+    },
+    "authentication": {
+      "client_id": "",
+      "client_secret": ""
+    },
+    "is_dynamic_registration": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "经纬度查询天气",
+  "typ": "api",
+  "description": "经纬度查询天气",
+  "desc": "通过经纬度查询实时天气信息",
+  "industry": "通用",
+  "config": {
+    "schema": "{\n  \"openapi\": \"3.1.0\",\n  \"info\": {\n    \"title\": \"Open-Meteo Weather API\",\n    \"description\": \"Free weather API, no key required, global coverage.\",\n    \"version\": \"v1.0.0\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://api.open-meteo.com\",\n      \"description\": \"Open-Meteo Public Server\"\n    }\n  ],\n  \"paths\": {\n    \"/v1/forecast\": {\n      \"get\": {\n        \"description\": \"Get current weather + forecast by latitude/longitude\",\n        \"operationId\": \"GetWeatherForecast\",\n        \"parameters\": [\n          {\n            \"name\": \"latitude\",\n            \"in\": \"query\",\n            \"description\": \"Latitude (e.g. 32.06 for Nanjing)\",\n            \"required\": true,\n            \"schema\": { \"type\": \"number\" }\n          },\n          {\n            \"name\": \"longitude\",\n            \"in\": \"query\",\n            \"description\": \"Longitude (e.g. 118.78 for Nanjing)\",\n            \"required\": true,\n            \"schema\": { \"type\": \"number\" }\n          },\n          {\n            \"name\": \"current\",\n            \"in\": \"query\",\n            \"description\": \"Return current weather\",\n            \"required\": false,\n            \"schema\": { \"type\": \"string\", \"default\": \"temperature_2m,relative_humidity_2m,weathercode\" }\n          }\n        ]\n      }\n    }\n  },\n  \"components\": { \"schemas\": {} }\n}",
+    "credentials": {
+      "auth_type": "api_key",
+      "api_key_value": "1",
+      "api_key_header": "Authorization",
+      "api_key_header_prefix": "Basic"
+    },
+    "schema_type": "openapi",
+    "privacy_policy": "经纬度查询天气",
+    "custom_disclaimer": "经纬度查询天气"
+  }
+}

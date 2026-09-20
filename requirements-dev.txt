@@ -1,0 +1,2 @@
+-r tools/fde-assistant-mcp/requirements.txt
+PyYAML==6.0.3

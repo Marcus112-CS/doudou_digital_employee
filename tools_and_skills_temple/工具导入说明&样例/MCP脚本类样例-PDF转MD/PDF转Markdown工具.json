@@ -1,0 +1,21 @@
+{
+  "name": "PDF转Markdown工具",
+  "typ": "mcp_script",
+  "description": "PDF转Markdown MCP工具已生成，使用PyMuPDF提取文本并通过markdownify转换为Markdown格式，仅包含纯文本内容，包含完整的server.py、requirements.txt和README.md文件。",
+  "desc": "PDF转Markdown MCP工具已生成，使用PyMuPDF提取文本并通过markdownify转换为Markdown格式，仅包含纯文本内容，包含完整的server.py、requirements.txt和README.md文件。",
+  "industry": "通用",
+  "config": {
+    "cmd": {
+      "mcpServers": {
+        "env": {},
+        "args": [
+          "server.py"
+        ],
+        "command": "python",
+        "transport": "stdio"
+      }
+    },
+    "filemark": "199e0c0e9a2c317dc223ec990e348335",
+    "file_name": "1786031688312_656c9abe-facc-46e5-bd07-042a94db27b2.zip"
+  }
+}

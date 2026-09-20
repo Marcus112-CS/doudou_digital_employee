@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "demo": true,
+  "products": [
+    {
+      "id": "DEMO-P001",
+      "name": "演示产品-事件处置工单",
+      "keywords": ["事件", "处置", "派单", "工单", "闭环", "社会治理", "事件派单", "事件处置"],
+      "public": {
+        "summary": "模拟事件登记、派发、反馈和状态查询能力，仅用于验证匹配流程。",
+        "capabilities": ["事件登记", "处置派单", "结果反馈", "处置状态查询"],
+        "prerequisites": ["已明确业务流程和处置责任", "有可用的系统接口或数据导入方式"],
+        "exclusions": ["不提供车辆识别算法", "不代替人工确认事件责任", "没有演示外的实际性能和交付承诺"]
+      },
+      "owner_department_ids": ["DEMO-D001"],
+      "internal_notes": "仅内部演示说明；不是真实公司产品，需替换为经过审核的产品资料。",
+      "source": {"title": "本项目模拟能力目录", "reference": "demo:catalog/P001", "updated_at": "2026-09-19", "valid_until": null, "visibility": "internal"}
+    },
+    {
+      "id": "DEMO-P002",
+      "name": "演示产品-车辆事件分析",
+      "keywords": ["车辆", "违停", "交通", "视频", "识别", "车辆识别", "违停识别"],
+      "public": {
+        "summary": "模拟车辆事件识别能力，用于讨论接入与验证条件。",
+        "capabilities": ["车辆事件候选识别", "违停事件线索输出"],
+        "prerequisites": ["视频接入及使用权限已确认", "需使用客户现场样本验证识别效果"],
+        "exclusions": ["不能据此承诺识别准确率", "不自动处罚", "不包含处置派单系统"]
+      },
+      "owner_department_ids": ["DEMO-D002"],
+      "internal_notes": "测试用的识别能力，不代表智慧交通方向的实际产品。",
+      "source": {"title": "本项目模拟能力目录", "reference": "demo:catalog/P002", "updated_at": "2026-09-19", "valid_until": null, "visibility": "internal"}
+    },
+    {
+      "id": "DEMO-P003",
+      "name": "演示产品-管理看板",
+      "keywords": ["平台", "展示", "可视化", "看板", "统计", "集成", "平台展示"],
+      "public": {
+        "summary": "模拟汇总业务数据并展示状态的看板能力。",
+        "capabilities": ["状态展示", "业务统计", "基于已确认接口的数据接入"],
+        "prerequisites": ["数据口径已确认", "接口和数据访问权限可用"],
+        "exclusions": ["不替代源系统的数据治理", "不直接承担事件处置", "不证明公司现有系统兼容性"]
+      },
+      "owner_department_ids": ["DEMO-D003"],
+      "internal_notes": "仅为演示跨部门组合；牵头部门需要正式依据。",
+      "source": {"title": "本项目模拟能力目录", "reference": "demo:catalog/P003", "updated_at": "2026-09-19", "valid_until": null, "visibility": "internal"}
+    }
+  ],
+  "departments": [
+    {
+      "id": "DEMO-D001", "name": "演示团队-事件处置支持组",
+      "keywords": ["事件", "处置", "工单", "派单", "社会治理", "事件派单", "事件处置"],
+      "responsibilities": ["模拟提供事件处置流程咨询", "模拟确认工单系统能力和接入条件"],
+      "exclusions": ["不负责车辆算法", "不能决定客户归属或项目牵头"],
+      "entrypoint": "待替换为经核实的岗位或正式协同渠道；当前无真实联系人",
+      "required_materials": ["客户场景", "现有处置流程", "需确认的具体问题"],
+      "cooperation_notes": "与演示车辆分析和看板团队联合讨论；不自动指定牵头。",
+      "source": {"title": "本项目模拟协同目录", "reference": "demo:catalog/D001", "updated_at": "2026-09-19", "valid_until": null, "visibility": "internal"}
+    },
+    {
+      "id": "DEMO-D002", "name": "演示团队-车辆分析支持组",
+      "keywords": ["车辆", "违停", "交通", "视频", "识别", "车辆识别", "违停识别"],
+      "responsibilities": ["模拟提供车辆分析方案咨询", "模拟提出现场样本测试要求"],
+      "exclusions": ["不负责工单处置", "未获得现场验证不能承诺算法指标"],
+      "entrypoint": "待替换为经核实的岗位或正式协同渠道；当前无真实联系人",
+      "required_materials": ["业务目标", "视频环境说明", "可用样本和授权情况"],
+      "cooperation_notes": "仅讨论技术支持范围；采购意向、项目牵头均待确认。",
+      "source": {"title": "本项目模拟协同目录", "reference": "demo:catalog/D002", "updated_at": "2026-09-19", "valid_until": null, "visibility": "internal"}
+    },
+    {
+      "id": "DEMO-D003", "name": "演示团队-平台展示支持组",
+      "keywords": ["平台", "展示", "集成", "统计", "可视化", "看板", "平台展示"],
+      "responsibilities": ["模拟提供展示和数据对接咨询"],
+      "exclusions": ["不负责车辆识别", "不承担源业务系统的数据准确性责任"],
+      "entrypoint": "待替换为经核实的岗位或正式协同渠道；当前无真实联系人",
+      "required_materials": ["数据源和接口说明", "展示对象", "指标口径"],
+      "cooperation_notes": "根据实际接口确认工作量；不由目录自动决定合同和交付分工。",
+      "source": {"title": "本项目模拟协同目录", "reference": "demo:catalog/D003", "updated_at": "2026-09-19", "valid_until": null, "visibility": "internal"}
+    }
+  ]
+}
